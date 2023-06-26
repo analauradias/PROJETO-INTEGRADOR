@@ -2,3 +2,10 @@
     font-family:  Barrio;
     src: url(../fonts/Barrio-Regular.ttf);
 }
+
+img {
+    text-align: center;
+    border: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
