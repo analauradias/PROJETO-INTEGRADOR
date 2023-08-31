@@ -5,99 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porcentagem</title>
-    <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="shortcut icon" href="imagens (1)/favicon.ico">
+    <title>Leitura e interpretação de gráficos</title>
+    <link rel="stylesheet" href="estilo do conteudo/estilo.css">
 
     <style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
     </style>
 </head>
 
 <body>
     <header>
-        <div><img src="imagens/favicon.ico" alt="logo" width="100px"></div>
-        <div class="titulo-index"><h1>Estudos da matemática</h1></div>
-        </header>
-    
-        <div class="navegacao">
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="graficos.html">Interpretação de gráficos</a>
-        <a href="porcentagem.html">Porcentagem</a>
-        <a href="prismas.html">Prismas</a>
-        <a href="trigonometria.html">Trigonometria</a>
-        <a href="geometria.html">Geometria</a>
-        <a href="Sambaquis.html">Sambaquis</a>
-        </nav>
-    </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagens do site/lapis.png" alt="logo">
+            </a>
+            <div class="titulo-site">
+                <h1>Estudos de matemática</h1>
+            </div>
+        </div>
 
+        
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"> </div>
+                <div id="bar2" class="bar"> </div>
+                <div id="bar3" class="bar"> </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="estatisticas.html">Estatística</a></li>
+                    <li><a href="geometria.html">Geometria</a></li>
+                    <li><a href="graficos.html">Gráficos</a></li>
+                    <li><a href="porcentagem.html">Porcentagem</a></li>
+                    <li><a href="prismas.html">Prismas</a></li>
+                    <li><a href="trigonometria.html">Trigonometria</a></li>
+                    <li><a href="Sambaquis.html">Sambaqui</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"> </div>
+
+        <script>
+            function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
+    </header>
     <main>
-    <h1 id="titulo-texto">4 PORCENTAGEM </h1>
 
-    <div class="texto-principal">
-    <p>
-        Além das situações financeiras, a porcentagem também é muito utilizada em diversas áreas do conhecimento, como
-        na química, biologia, estatística, entre outras. Por exemplo, em um experimento científico, pode-se calcular a
-        porcentagem de eficácia de um medicamento em relação a um grupo controle, MARTINS,DA COSTA MACHADO,GONÇALVES
-        (2018).
-    </p>
-    <p>
-        Para calcular a porcentagem, podemos utilizar a regra de três simples. Por exemplo, se queremos calcular qual é
-        a porcentagem de 50 em relação a 100, basta multiplicar 50 por 100 e dividir o resultado por 100. Ou seja,
-        50/100 x 100 = 50%. Também é comum utilizarmos a porcentagem para comparar dois valores. Por exemplo, se um
-        produto custa R$ 100 e um produto B custa R$ 80, podemos calcular qual é a porcentagem de desconto que o produto
-        B oferece em relação ao produto A. Para isso, basta subtrair o valor do produto B pelo valor do produto A,
-        dividir o resultado pelo valor do produto A e multiplicar por 100. Ou seja, (100 - 80)/100 x 100 = 20%,
-        MARTINS,DA COSTA MACHADO,GONÇALVES (2018).
-    </p>
-    <p>
-        Em resumo, a porcentagem é uma forma muito útil de expressar uma fração de um número inteiro em centésimos, e é
-        amplamente utilizada em diversas áreas do conhecimento para representar taxas, proporções e comparar
-        valores,MARTINS,DA COSTA MACHADO,GONÇALVES (2018).
-    </p>
-    <p>
-        A aplicação da porcentagem no cotidiano é bastante ampla, podendo ser utilizada em cálculos diversos, solução de
-        problemas práticos, questões de concursos como a OBMEP e até mesmo no levantamento de dados a partir de
-        situações vividas no ambiente escolar, MARTINS,DA COSTA MACHADO,GONÇALVES (2018).
-    </p>
-    <p>
-        Exemplo:
-    </p>
-    <p>
-        Considere que em certa escola uma turma com 40 alunos fizeram uma votação para decidir qual cor a camiseta da
-        turma seria,calcule quantos alunos escolheram cada cor de acordo com o gráfico:
-    </p>
-    <div class="imagem">
-    <h3>Imagem 7 - Escolha da cor da camiseta </h3>
-    <a>
-        <img src="imagens/grafico_porcemtagem.png" alt="Gráfico">
-    </a>
-</div>
-    <h5>Fonte: autor </h5>
-    <p>Para saber qual a quantidade de alunos que escolheram cada cor devemos levar em conta que 100% são 40 alunos
-        devemos então aplicar a regra de três portanto se queremos saber quantos alunos escolheram a cor azul:
-        De acordo com o gráfico 32,5% escolheram a cor preta, 22,5% escolheram a cor rosa, 12,5% escolheram a cor verde,
-        7,5% escolheram a cor amarela e 25% escolheram azul, para sabermos qual a quantidade de alunos que escolherem
-        azul
-    </p>
-    <div class="imagem">
-        <h3>Imagem 8 - Tabela </h3>
-        <a>
-            <img src="imagens/grafico_porcemtagem.png" alt="Gráfico">
-        </a>
-    <p>Então faremos 40*25 = 100X → 1000 =100X → 1000/100 = X → 10 = X; Então teremos que 10 alunos escolheram a cor
-        azul, para sabermos as outras cores repetiremos o processo:
-    </p>
-    <p>Rosa: 40*22,5 = 100X → 900 = 100X → 900/100 = X → 9 = X; 9 alunos escolheram a cor rosa
-    </p>
-    <p>Verde: 40*12,5 = 100X → 500 = 100X → 500/100 = X → 5 = X; 5 alunos escolheram a cor verde
-    </p>
-    <p>Amarelo: 40*7,5 = 100X → 300 = 100X → 300/100 = X → 3 = X; 3 alunos escolheram a cor amarela
-    </p>
-</div>
-</main>
+    </main>
 </body>
-
 
 </html>

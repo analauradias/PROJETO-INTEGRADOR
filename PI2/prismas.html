@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="imagens (1)/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prismas</title>
+    <link rel="shortcut icon" href="imagens (1)/favicon.ico">
+    <title>Leitura e interpretação de gráficos</title>
+    <link rel="stylesheet" href="estilo do conteudo/estilo.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+    </style>
 </head>
+
 <body>
-    <a href="index.html">
-        <img src="imagens/" alt="Inicio">
-    </a>
-    <a href="graficos.html">
-        <img src="imagens/" alt="graficos">
-    </a>
-    <a href="porcentagens.html">
-        <img src="imagens/" alt="porcentagens">
-    </a>
-    <a href="prismas.html">
-        <img src="imagens/" alt="prismas">
-    </a>
-    <a href="trigonometria.html">
-        <img src="imagens/" alt="trigonometria">
-    </a>
-    <a href="geometria.html">
-        <img src="imagens/" alt="geometria">
-    </a>
-    <a href="Sambaquis.html">
-        <img src="imagens/" alt="Sambaquis">
-    </a>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagens do site/lapis.png" alt="logo">
+            </a>
+            <div class="titulo-site">
+                <h1>Estudos de matemática</h1>
+            </div>
+        </div>
+
+        
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"> </div>
+                <div id="bar2" class="bar"> </div>
+                <div id="bar3" class="bar"> </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="estatisticas.html">Estatística</a></li>
+                    <li><a href="geometria.html">Geometria</a></li>
+                    <li><a href="graficos.html">Gráficos</a></li>
+                    <li><a href="porcentagem.html">Porcentagem</a></li>
+                    <li><a href="prismas.html">Prismas</a></li>
+                    <li><a href="trigonometria.html">Trigonometria</a></li>
+                    <li><a href="Sambaquis.html">Sambaqui</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"> </div>
+
+        <script>
+            function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
+    </header>
+    <main>
+
+    </main>
 </body>
+
 </html>
