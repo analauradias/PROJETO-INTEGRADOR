@@ -1,102 +1,118 @@
 @charset "UTF-8";
 
+
+header {
+  display: flexbox;
+}
+
+.logo {
+  display: flex;
+  margin-left: 500px;
+  margin-top: 18px;
+}
+
+.logo img {
+  width: 35px;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 253, 227);
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(255, 253, 227);
+}
+
 #menu {
-    z-index: 2;
-  }
-  
+  z-index: 2;
+}
+
 #menu-bar {
-    width: 45px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-  }
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
 
 .bar {
-    height: 5px;
-    width: 70%;
-    background-color: #24063b;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
+  height: 5px;
+  width: 70%;
+  background-color: #24063b;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 #bar1 {
-    transform: translateY(-4px);
-  }
-  
-#bar3 {
-    transform: translateY(4px);
+  transform: translateY(-4px);
 }
-  
+
+#bar3 {
+  transform: translateY(4px);
+}
+
 .nav {
-    transition: 0.3s ease;
-    display: none;
-  }
-  
-  .nav ul {
-    padding: 0 22px;
-  }
-  
-  .nav li {
-    list-style: none;
-    padding: 12px 0;
-  }
-  
-  .nav li a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  .nav li a:hover {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
+  transition: 0.3s ease;
+  display: none;
+}
 
-  .menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background:#24063b; 
-    border-radius: 2%;
-    transition: 0.3s ease;
-  }
+.nav ul {
+  padding: 0 22px;
+}
 
-  .menu-bg, #menu {
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
 
-  .change {
-    display: block;
-  }
-  
-  .change .bar {
-    background-color: yellow;
-  }
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
 
-  .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-  }
-  
-  .change #bar2 {
-    opacity: 0;
-  }
-  
-  .change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-  }
-  
-  .change-bg {
-      width: 20%;
-      height: 80%;
-      transform: translate(-60%,-30%);
+.nav li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: #24063b;
+  border-radius: 2%;
+  transition: 0.3s ease;
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  margin-left: 30px;
+  position: absolute;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: yellow;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 30%;
+  height: 70%;
+  transform: translate(-60%, -30%);
 }
